@@ -18,7 +18,7 @@ class ImagesMaker:
         for item in self.images:
             photo = Image.open(f'images/{item}')
             actual_sizes = self.check_size(photo)
-            photo.resize((actual_sizes[0], actual_sizes[1])).save(f'./{item}', quality=50)
+            photo.resize((actual_sizes[0], actual_sizes[1])).save(f'./good_image/{item}', quality=50)
             # photo.save(f'good_images/{item}')
 
 
